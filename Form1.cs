@@ -13,7 +13,7 @@ namespace WordPadMin
 {
     public partial class Form1 : Form
     {
-       // private FileData data = new FileData();
+       
     
         public Form1()
         {
@@ -52,7 +52,7 @@ namespace WordPadMin
         private bool saved = true;
 
 
-        //private EventHandler<string> ContentLoaded;
+        
         public EventHandler<string> ContentUpdate;
         public EventHandler<string> FileChanged;
 
@@ -68,7 +68,7 @@ namespace WordPadMin
 
        
 
-        //  private bool showdialog = true;
+        
 
 
         private void Form1_Load(object sender, EventArgs e)
@@ -122,35 +122,7 @@ namespace WordPadMin
             }
         }
 
-        /*  //
-             FileInfo selected = new FileInfo("Unnamed.txt");
-           StreamReader reader = File.OpenText(filename);
-             while (!reader.EndOfStream)
-             {
-                 richTextBox1.Text += reader.ReadLine() + '\n';
-             }
-            richTextBox1.LoadFile(openDialog.FileName, RichTextBoxStreamType.PlainText);
-             string fileText = System.IO.File.ReadAllText(filename, Encoding.GetEncoding(1251));
-             richTextBox1.Text = fileText;
-            */
-
-
-        /* public void SaveAs()
-         {
-             SaveFileDialog saveDialog = new SaveFileDialog();
-             string filename = saveDialog.FileName;
-             Stream stream;
-             if(saveDialog.ShowDialog()==DialogResult.OK)
-             {
-                 if((stream=saveDialog.OpenFile()) !=null)
-                 {
-                     stream.Close();
-                     currentFile = new FileInfo(saveDialog.FileName);
-                     Save();
-                 }
-             }
-         }*/
-
+         
         private void SaveAs(object sender, EventArgs e)
         {
             
@@ -174,7 +146,7 @@ namespace WordPadMin
                 }
             }
            
-           // MessageBox.Show("Файл сохранен");
+           
             
         }
 
@@ -196,8 +168,7 @@ namespace WordPadMin
         private void clearToolStripMenuItem_Click(object sender, EventArgs e)
         { 
                 System.Windows.Forms.Application.Exit();
-                System.Diagnostics.Process.Start(@"C:/Users/Shatcung/source/repos/WordPadMin/bin/Debug/WordPadMin.exe");
-
+                 
             
         }
        
